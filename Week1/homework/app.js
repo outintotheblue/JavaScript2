@@ -65,3 +65,22 @@
 	}
 	document.body.onload = listGames;
 }
+
+
+const objGamesArr = [];
+
+for (const newListGames in objGames) {
+	console.log(newListGames);
+	objGamesArr.push(objGames[newListGames])
+}
+
+const gamePic = {
+	'stardew_valley': stardewvalley.jpg,
+	'overwatch': overwatch.png,
+	'lineage': lineage.png,
+	'counter_strike': counterstrike.jpg,
+	'wow': wow.jpg,
+	'house_of_the_dead': hotd.jpg,
+};
+
+
