@@ -1,4 +1,70 @@
 'use strict';
+{
+	let games = [
+		{
+			title: 'stardew_valley',
+			year: '2016',
+			company: 'ConcernedApe',
+			type: 'role play',
+			image: 'images/stardewvalley.jpg'
+		},
+		{
+			title: 'overwatch',
+			year: '2016',
+			company: 'blizzard',
+			type: 'shooter',
+			image: 'images/overwatch.png'
+		},
+		{
+			title: 'lineage',
+			year: '2003',
+			company: 'NCSOFT',
+			type: 'MMORPG',
+			image: 'images/lineage.png'
+		},
+		{
+			title: 'counter_strike',
+			year: '2000',
+			company: 'namco',
+			type: 'shooter',
+			image: 'images/counterstrike.jpg'
+		},
+		{
+			title: 'wow',
+			year: '2004',
+			company: "blizzard",
+			type: 'role play',
+			image: 'images/wow.jpg'
+		},
+		{
+			title: 'house_of_the_dead',
+			year: '1996',
+			company: 'sega',
+			type: 'light gun shooter',
+			image: 'images/hotd.jpg'
+		}
+	]
+
+	document.body.onload = listGames;
+
+	function listGames() {
+		let ul = document.createElement('ul')
+		for (const game of games) {
+			let li = document.createElement('li');
+			li.innerHTML = `<h2>${game.title}</h2>`
+			li.innerHTML += `Year: ${game.year}<br>`
+			li.innerHTML += `Type: ${game.type}<br>`
+			li.innerHTML += `Company: ${game.company}<br>`
+			let cover = document.createElement("img");
+			cover.width = 250
+			cover.src = game.image;
+			li.appendChild(cover)
+			ul.appendChild(li);
+		}
+		document.body.appendChild(ul);
+	}
+}
+/* 'use strict';
 
 document.body.style.backgroundColor = "#AA0054";
 
@@ -114,3 +180,5 @@ document.body.style.backgroundColor = "#AA0054";
 	}
 
 }
+ */
+
