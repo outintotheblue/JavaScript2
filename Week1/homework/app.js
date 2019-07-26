@@ -1,5 +1,8 @@
 'use strict';
 
+document.body.style.backgroundColor = "#AA0054";
+
+
 {
 	const gameTitles = [
 		'stardew_valley',
@@ -15,42 +18,48 @@
 			properties: {
 				year: '2016',
 				company: 'ConcernedApe',
-				type: 'role play'
+				type: 'role play',
+				image: 'stardewvalley.jpg'
 			},
 		},
 		'overwatch': {
 			properties: {
 				year: '2016',
 				company: 'blizzard',
-				type: 'shooter'
+				type: 'shooter',
+				image: 'overwatch.png'
 			},
 		},
 		'lineage': {
 			properties: {
 				year: '2003',
 				company: 'NCSOFT',
-				type: 'MMORPG'
+				type: 'MMORPG',
+				image: 'lineage.png'
 			},
 		},
 		'counter_strike': {
 			properties: {
 				year: '2000',
 				company: 'namco',
-				type: 'shooter'
+				type: 'shooter',
+				image: 'counterstrike.jpg'
 			},
 		},
 		'wow': {
 			properties: {
 				year: '2004',
 				company: "blizzard",
-				type: 'role play'
+				type: 'role play',
+				image: 'wow.jpg'
 			},
 		},
 		'house_of_the_dead': {
 			properties: {
 				year: '1996',
 				company: 'sega',
-				type: 'light gun shooter'
+				type: 'light gun shooter',
+				image: 'hotd.jpg'
 			}
 		}
 	}
@@ -91,7 +100,9 @@
 			li.innerHTML += `<li> Year: ${objGames[gameTitles[i]].properties.year} </li>`
 			li.innerHTML += `<li> Type: ${objGames[gameTitles[i]].properties.type} </li>`
 			li.innerHTML += `<li> Company: ${objGames[gameTitles[i]].properties.company} </li>`
-
+			let cover = document.createElement("img");
+			cover.src = objGames[gameTitles[i]].image;
+			li.innerHTML += `<img> ${document.getElementById("albumCovers").appendChild(cover)}`;
 
 
 			ul.appendChild(li);
@@ -100,24 +111,6 @@
 
 		document.body.appendChild(ul);
 
-	}
-
-}
-
-let objCovers = {
-	'stardew_valley': 'stardewvalley.jpg',
-	'overwatch': 'overwatch.png',
-	'lineage': 'lineage.png',
-	'counter_strike': 'counterstrike.jpg',
-	'wow': 'wow.jpg',
-	'house_of_the_dead': 'hotd.jpg'
-
-}
-
-function getCovers(imageObject) {
-	let numberOfCovers = objCovers.length;
-	for (let i in imageObject) {
-		document.querySelector('#albumCovers').innerHTML = `<li> ${objCovers[j]}<br>
 	}
 
 }
