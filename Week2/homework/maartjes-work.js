@@ -46,8 +46,8 @@ const maartjesTasks = monday.concat(tuesday);
 const maartjesHourlyRate = 20;
 
 function computeEarnings(tasks, hourlyRate) {
-	const inHoursArr = tasks.map(hours => duration / 60).filter(hours => hours <= 2);
-	const maartjesPayArr = inHoursArr.map(hour => hour * maartjesHourlyRate);
+	const inHoursArr = tasks.map(hours => task.duration / 60).filter(hours => hours <= 2);
+	const maartjesPayArr = inHoursArr.map(hours => hours * maartjesHourlyRate);
 	const totalPay = maartjesPayArr.reduce((sum, amount) => sum + amount);
 
 	console.log(totalPay);
