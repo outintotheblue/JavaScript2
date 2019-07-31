@@ -1,7 +1,10 @@
 'use strict';
+//constructor 
 
 function Dog() {
-  // add your code here
+	this.name = "Bobby";
+	this.color = "Black";
+	this.numLegs = 4;
 }
 
 const hound = new Dog();
