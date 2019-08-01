@@ -2,7 +2,7 @@
 
 // Use a 'for' loop
 function repeatStringNumTimesWithFor(str, num) {
-	const result = " ";
+	let result = " ";
 	for (let i = 0; num > i; i++) {
 		result += str;
 	}
@@ -14,7 +14,7 @@ console.log('for', repeatStringNumTimesWithFor('abc', 3));
 
 // Use a 'while' loop
 function repeatStringNumTimesWithWhile(str, num) {
-	const result = '';
+	let result = '';
 	while (num > 0) {
 		result += str;
 		num--;
@@ -26,7 +26,7 @@ console.log('while', repeatStringNumTimesWithWhile('abc', 3));
 
 // Use a 'do...while' loop
 function repeatStringNumTimesWithDoWhile(str, num) {
-	const result = '';
+	let result = '';
 	do {
 		result += str;
 		num--;
