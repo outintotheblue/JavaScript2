@@ -5,10 +5,11 @@ function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
 
 	for (let i = startIndex; i <= stopIndex; i++) {
 		numbers.push(i);
+
 		if (i % 3 === 0) {
-			return threeCallback(numbers);
+			threeCallback(numbers);
 		} if (i % 5 === 0) {
-			return fiveCallback(numbers);
+			fiveCallback(numbers);
 		} if (i % 3 === 0 && i % 5 === 0) {
 			threeCallback(numbers);
 			fiveCallback(numbers);

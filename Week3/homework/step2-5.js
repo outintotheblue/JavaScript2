@@ -1,7 +1,5 @@
-'use strict';
-
 function multiplyAll(arr) {
-	// eslint-disable-next-line
+
 	let product = 1;
 
 	for (let i = 0; i < arr.length; i++) {

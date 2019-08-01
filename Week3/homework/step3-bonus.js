@@ -3,7 +3,7 @@
 const values = ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'];
 
 function makeUnique(arr) {
-	const uniqueValues = values.filter((x, i, a) => a.indexOf(x) == i);
+	const uniqueValues = values.filter((letter, i, arr) => arr.indexOf(letter) == i);
 	console.log(uniqueValues);
 }
 
