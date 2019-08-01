@@ -4,7 +4,8 @@ const arr2d = [[1, 2], [3, 4], [5, 6]];
 const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
 
 function flattenArray2d(arr) {
-	let arr2Flat = [].concat.apply([], arr2d);
+	//	let arr2Flat = [].concat.apply([], arr2d);
+	let arr2Flat = arr2d.flat();
 	return arr2Flat;
 }
 
