@@ -1,1 +1,41 @@
 /* add your styling here */
+
+html {
+	background: rgb(172, 108, 73);
+	background: linear-gradient(0deg, rgba(172, 108, 73, 1) 0%, rgba(233, 176, 54, 1) 100%);
+}
+
+h2 {
+	color: rgb(5, 58, 58);
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: sans-serif;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	margin-left: 25%;
+	padding: 5%;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+li {
+	align-content: center;
+	width: 50%;
+	flex-grow: 1;
+	font-family: sans-serif;
+	color: rgb(5, 58, 58);
+}
+
+img {
+	margin: 2%;
+}
+
+#main {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 3em;
+	color: rgb(5, 58, 58);
+}
